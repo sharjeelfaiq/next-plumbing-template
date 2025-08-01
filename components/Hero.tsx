@@ -1,5 +1,7 @@
+// Updated Hero.tsx
 import Image from "next/image";
 import { heroData } from "@/data";
+import Button from "@/components/common/Button";
 
 const Hero = () => {
   return (
@@ -31,20 +33,27 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
-          <a
+          <Button
             href={heroData.primaryButton.href}
-            className="btn-primary inline-block w-full sm:w-fit text-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold"
+            variant="primary"
+            size="lg"
             target="_blank"
             rel="noopener noreferrer"
+            className="sm:w-auto"
+            fullWidth={true}
           >
             {heroData.primaryButton.text}
-          </a>
-          <a
+          </Button>
+
+          <Button
             href={heroData.secondaryButton.href}
-            className="bg-transparent border-2 border-blue-300 text-blue-100 hover:bg-blue-300 hover:text-slate-900 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold transition-all duration-300 inline-block w-full sm:w-fit text-center"
+            variant="outline"
+            size="lg"
+            className="border-blue-300 text-slate-300 hover:bg-blue-300 hover:text-white sm:w-auto"
+            fullWidth={true}
           >
             {heroData.secondaryButton.text}
-          </a>
+          </Button>
         </div>
 
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 md:gap-6 text-blue-100">
@@ -58,6 +67,6 @@ const Hero = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

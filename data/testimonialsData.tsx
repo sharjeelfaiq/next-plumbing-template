@@ -14,14 +14,14 @@ interface CTA {
   buttons: [string, string];
 }
 
-interface ServiceHighlightsContent {
+interface TestimonialsData {
   heading: string;
   description: string;
   services: ServiceItem[];
   cta: CTA;
 }
 
-export const serviceHighlightsContent: ServiceHighlightsContent = {
+export const testimonialsData: TestimonialsData = {
   heading: "Reliable Plumbing Services You Can Trust",
   description:
     "Providing professional, insured, and dependable plumbing solutions for homes and properties of all sizes. Our experts are committed to quality and customer satisfaction.",

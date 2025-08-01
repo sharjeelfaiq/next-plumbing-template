@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { plumbingServiceData } from "@/data";
+import Button from "./common/Button";
 
 export default function PlumbingService() {
   return (
@@ -55,18 +56,23 @@ export default function PlumbingService() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4 sm:mb-6">
-            <Link
+            <Button
               href={plumbingServiceData.cta.estimate.href}
-              className="btn-primary text-center w-full sm:w-auto"
+              variant="primary"
+              size="md"
+              fullWidth={true}
             >
               {plumbingServiceData.cta.estimate.label}
-            </Link>
-            <Link
+            </Button>
+
+            <Button
               href={plumbingServiceData.cta.emergency.href}
-              className="inline-flex items-center justify-center px-4 sm:px-6 py-3 font-semibold text-primary border-2 border-primary rounded hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center w-full sm:w-auto text-sm sm:text-base"
+              variant="outline"
+              size="md"
+              fullWidth={true}
             >
               {plumbingServiceData.cta.emergency.label}
-            </Link>
+            </Button>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 text-xs sm:text-xs text-muted-foreground">
@@ -81,4 +87,4 @@ export default function PlumbingService() {
       </div>
     </div>
   );
-};
+}

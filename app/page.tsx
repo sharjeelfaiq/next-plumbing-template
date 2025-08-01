@@ -10,7 +10,6 @@ const PlumbingService = dynamic(() => import("@/components/PlumbingService"));
 const Gallery = dynamic(() => import("@/components/Gallery"));
 const PlumbingServices = dynamic(() => import("@/components/PlumbingServices"));
 const Testimonials = dynamic(() => import("@/components/Testimonials"));
-const ContactCTA = dynamic(() => import("@/components/ContactCTA"));
 
 export default function Home() {
   return (
@@ -28,8 +27,6 @@ export default function Home() {
       <PlumbingServices />
 
       <Testimonials />
-
-      <ContactCTA />
     </main>
   );
 }

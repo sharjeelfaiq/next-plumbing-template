@@ -1,5 +1,4 @@
 export * from "./aboutData";
-export * from "./contactCTAData";
 export * from "./footerData";
 export * from "./galleryData";
 export * from "./headerData";
