@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { contactCTAData, type ContactCTAAction } from "@/data";
 
-export const ContactCTA = () => {
+export default function ContactCTA() {
   const { content, actions, trustIndicators, seo } = contactCTAData;
 
   const renderActionButton = (action: ContactCTAAction, index: number) => {

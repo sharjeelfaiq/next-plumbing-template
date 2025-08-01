@@ -6,12 +6,20 @@ import {
   plumbingServicesConfig,
 } from "@/data";
 
-const ServiceCard = ({ service, index }: { service: any; index: number }) => {
+export const ServiceCard = ({
+  service,
+  index,
+}: {
+  service: any;
+  index: number;
+}) => {
   const isEven = index % 2 === 0;
-  
+
   return (
-    <div className={`grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-8 items-center bg-background shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden border border-border`}>
-      <div className={`relative h-64 md:h-80 ${!isEven ? 'md:order-2' : ''}`}>
+    <div
+      className={`grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-8 items-center bg-background shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden border border-border`}
+    >
+      <div className={`relative h-64 md:h-80 ${!isEven ? "md:order-2" : ""}`}>
         <Image
           src={service.image}
           alt={service.altText}
@@ -33,22 +41,22 @@ const ServiceCard = ({ service, index }: { service: any; index: number }) => {
         </div>
       </div>
 
-      <div className={`p-6 md:p-8 ${!isEven ? 'md:order-1' : ''}`}>
+      <div className={`p-6 md:p-8 ${!isEven ? "md:order-1" : ""}`}>
         <div className="flex items-center gap-2 mb-3">
           <div className="bg-primary rounded-full w-2 h-2" />
           <span className="text-primary text-sm font-semibold uppercase tracking-wide">
             {service.subtitle}
           </span>
         </div>
-        
+
         <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 hover:text-primary transition-colors duration-300">
           {service.title}
         </h3>
-        
+
         <p className="text-muted-foreground mb-4 leading-relaxed">
           {service.description}
         </p>
-        
+
         <p className="text-sm text-muted-foreground mb-6 italic">
           {service.brands}
         </p>
@@ -108,7 +116,7 @@ const CTASection = () => (
   </div>
 );
 
-export const PlumbingServices = () => {
+export default function PlumbingServices() {
   return (
     <section
       className="bg-muted/20 border-t border-border py-16"
@@ -126,7 +134,11 @@ export const PlumbingServices = () => {
 
         <div className="space-y-12">
           {plumbingServicesData.map((service, index) => (
-            <ServiceCard key={service.title || index} service={service} index={index} />
+            <ServiceCard
+              key={service.title || index}
+              service={service}
+              index={index}
+            />
           ))}
         </div>
 
@@ -134,4 +146,4 @@ export const PlumbingServices = () => {
       </div>
     </section>
   );
-};
+}

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { plumbingServiceData } from "@/data";
 
-export const PlumbingService = () => {
+export default function PlumbingService() {
   return (
     <div className="section-container bg-primary/5" id="services">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">

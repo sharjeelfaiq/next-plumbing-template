@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { heroData } from "@/data";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section
       id="home"
@@ -59,3 +59,5 @@ export const Hero = () => {
     </section>
   );
 }
+
+export default Hero;
