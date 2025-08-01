@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { footerData, type FooterContactInfo } from "@/data";
 
-export default function Footer() {
+export const Footer = () => {
   const { branding, navigation, contact, credentials, legal, ui } = footerData;
 
   const renderContactInfo = (info: FooterContactInfo, index: number) => {
@@ -141,4 +141,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};

@@ -6,7 +6,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { motion, AnimatePresence } from "framer-motion";
 import { galleryData, type GalleryCategory, type GalleryItem } from "@/data";
 
-export default function Gallery() {
+export const Gallery = () => {
   const { content, filters, items, modal, seo, ui } = galleryData;
 
   const [selectedCategory, setSelectedCategory] = useState<GalleryCategory>(

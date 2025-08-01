@@ -6,7 +6,7 @@ import {
   plumbingServicesConfig,
 } from "@/data";
 
-export default function PlumbingServices() {
+export const PlumbingServices = () => {
   return (
     <div
       className="bg-muted/20 border-t border-border py-8 sm:py-12 md:py-16"
@@ -130,4 +130,4 @@ export default function PlumbingServices() {
       </div>
     </div>
   );
-}
+};

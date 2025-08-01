@@ -1,13 +1,14 @@
-import Hero from "@/components/Hero";
-import AboutUs from "@/components/AboutUs";
-import ServiceHighlights from "@/components/ServiceHighlights";
-import PlumbingService from "@/components/PlumbingService";
-import Gallery from "@/components/Gallery";
-import PlumbingServices from "@/components/PlumbingServices";
-import Testimonials from "@/components/Testimonials";
-import ContactCTA from "@/components/ContactCTA";
-import LogoSection from "@/components/LogoSection";
-import FadeIn from "@/components/FadeIn";
+import {
+  Hero,
+  AboutUs,
+  ServiceHighlights,
+  PlumbingService,
+  Gallery,
+  PlumbingServices,
+  Testimonials,
+  ContactCTA,
+  FadeIn,
+} from "@/components/index";
 
 export default function Home() {
   return (
@@ -32,10 +33,6 @@ export default function Home() {
 
       <FadeIn>
         <PlumbingServices />
-      </FadeIn>
-
-      <FadeIn>
-        <LogoSection />
       </FadeIn>
 
       <FadeIn direction="up" distance={40}>

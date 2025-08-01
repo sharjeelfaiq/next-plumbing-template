@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { plumbingServiceData } from "@/data";
 
-export default function PlumbingService() {
+export const PlumbingService = () => {
   return (
     <div className="section-container bg-primary/5" id="services">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -81,4 +81,4 @@ export default function PlumbingService() {
       </div>
     </div>
   );
-}
+};

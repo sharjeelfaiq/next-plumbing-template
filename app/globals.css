@@ -59,7 +59,7 @@ html {
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; /* More professional font stack */
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif; /* More professional font stack */
 }
 
 @layer utilities {
@@ -302,38 +302,111 @@ body {
   }
 }
 
+/* Responsive Logo Slider Styles */
 .slider {
   position: relative;
   width: 100%;
-  height: 60px;
   overflow: hidden;
-  background: #0f172a; /* Professional dark slate */
+  background: #0f172a;
+  padding: 1rem 0;
 }
 
 .slide-track {
   display: flex;
-  width: calc(120px * 26);
-  animation: scroll 40s linear infinite;
-}
-
-.slide {
-  width: 120px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-120px * 13));
-  }
+  gap: 0.75rem;
+  animation: scroll-mobile 25s linear infinite;
+  width: max-content;
 }
 
 .slide-track:hover {
   animation-play-state: paused;
+}
+
+.slide {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  width: 100px; /* Mobile width */
+  height: 60px; /* Mobile height */
+}
+
+/* Mobile animation - faster for smaller screens */
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 640px) {
+  .slide {
+    width: 140px;
+    height: 70px;
+    padding: 0.375rem;
+  }
+  
+  .slide-track {
+    gap: 1rem;
+    animation: scroll-tablet 30s linear infinite;
+  }
+  
+  @keyframes scroll-tablet {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .slide {
+    width: 160px;
+    height: 80px;
+    padding: 0.5rem;
+  }
+  
+  .slide-track {
+    gap: 1.25rem;
+    animation: scroll-desktop 35s linear infinite;
+  }
+  
+  @keyframes scroll-desktop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Large desktop styles */
+@media (min-width: 1024px) {
+  .slide {
+    width: 180px;
+    height: 90px;
+    padding: 0.75rem;
+  }
+  
+  .slide-track {
+    gap: 1.5rem;
+    animation: scroll-large 40s linear infinite;
+  }
+  
+  @keyframes scroll-large {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }

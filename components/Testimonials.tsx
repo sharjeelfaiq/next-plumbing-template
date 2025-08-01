@@ -1,6 +1,6 @@
 import { serviceHighlightsContent } from "@/data";
 
-export default function ServiceHighlights() {
+export const Testimonials = () => {
   const { heading, description, services, cta } = serviceHighlightsContent;
 
   return (

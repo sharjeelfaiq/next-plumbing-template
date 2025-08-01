@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { aboutData } from "@/data";
 
-export default function AboutUs() {
+export const AboutUs = () => {
   const { content, media, badge, actions, seo } = aboutData;
 
   return (
@@ -62,4 +62,4 @@ export default function AboutUs() {
       </div>
     </div>
   );
-}
+};

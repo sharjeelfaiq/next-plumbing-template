@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { heroData } from "@/data";
 
-export default function Hero() {
+export const Hero = () => {
   return (
     <section
       id="home"
