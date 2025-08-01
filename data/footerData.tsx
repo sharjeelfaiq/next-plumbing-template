@@ -114,11 +114,6 @@ export const footerData: FooterData = {
         ariaLabel: "See our plumbing services",
       },
       {
-        label: "Testimonials",
-        href: "#testimonials",
-        ariaLabel: "Read customer testimonials",
-      },
-      {
         label: "Contact",
         href: "#contact",
         ariaLabel: "Contact our plumbing team",
