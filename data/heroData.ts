@@ -35,8 +35,8 @@ export const heroData: HeroData = {
     href: "https://wa.me/+1234567890",
   },
   secondaryButton: {
-    text: "Schedule Appointment",
-    href: "#contact",
+    text: "Leave Us a Review",
+    href: "https://www.google.com/maps",
   },
   trustIndicators: [
     "Licensed & Insured",

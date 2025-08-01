@@ -27,7 +27,7 @@ export const headerData: HeaderData = {
     { href: "#gallery", label: "Gallery" },
   ],
   contactLink: {
-    href: "#contact",
+    href: "https://wa.me/+1234567890",
     label: "Contact",
     cta: "Contact Us",
     button: "Book an Appointment",
