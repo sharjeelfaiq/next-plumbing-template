@@ -70,7 +70,7 @@ export interface FooterData {
 export const footerData: FooterData = {
   branding: {
     logo: {
-      src: "/logo-placeholder.png",
+      src: "/logo-placeholder.webp",
       alt: "Generic Plumbing Company Logo",
       width: 80,
       height: 80,

@@ -15,11 +15,11 @@ export const siteMeta = {
     },
     icons: {
       icon: "/favicon/favicon.ico",
-      apple: "/favicon/apple-touch-icon.png",
-      android: "/favicon/android-chrome-192x192.png",
-      android1: "/favicon/android-chrome-512x512.png",
-      favicon1: "/favicon/favicon-32x32.png",
-      favicon2: "/favicon/favicon-16x16.png",
+      apple: "/favicon/apple-touch-icon.webp",
+      android: "/favicon/android-chrome-192x192.webp",
+      android1: "/favicon/android-chrome-512x512.webp",
+      favicon1: "/favicon/favicon-32x32.webp",
+      favicon2: "/favicon/favicon-16x16.webp",
       manifest: "/favicon/site.webmanifest",
     },
     openGraph: {
@@ -32,7 +32,7 @@ export const siteMeta = {
         "Reliable plumbing solutions for residential and commercial properties. Call us for expert repairs, installations, and 24/7 emergency service.",
       images: [
         {
-          url: "/og-image.jpg",
+          url: "/og-image.webp",
           width: 1200,
           height: 630,
           alt: "Your Plumbing Company - Professional Plumbing Services",
@@ -44,7 +44,7 @@ export const siteMeta = {
       title: "Trusted Plumbing Services for Homes & Businesses",
       description:
         "Reliable plumbing solutions for residential and commercial properties. Call us for expert repairs, installations, and 24/7 emergency service.",
-      images: ["/og-image.jpg"],
+      images: ["/og-image.webp"],
     },
     robots: {
       index: true,

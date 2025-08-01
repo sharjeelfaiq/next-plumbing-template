@@ -34,7 +34,7 @@ export const plumbingServicesConfig = {
     sectionId: "services",
   },
   brand: {
-    icon: "/logo-placeholder.png",
+    icon: "/logo-placeholder.webp",
     altText: "Generic Plumbing Company Logo",
   },
 };
@@ -45,7 +45,7 @@ export const plumbingServicesData = [
     subtitle: "24/7 Response for Urgent Plumbing Needs",
     description:
       "Experienced plumbers available any time for burst pipes, major leaks, and system failures. Fast, effective repairs with guaranteed results.",
-    image: "/blue-pump.webp",
+    image: "/emergency-plumbing-repairs.webp",
     brands:
       "Trusted Tools & Equipment: Ridgid, Milwaukee, Klein Tools, Rothenberger",
     altText:
@@ -56,7 +56,7 @@ export const plumbingServicesData = [
     subtitle: "Advanced Solutions for Blocked Drains",
     description:
       "Thorough drain cleaning using professional-grade tools for long-term performance. Safe, efficient, and eco-conscious methods.",
-    image: "/green-pump.webp",
+    image: "/drain-cleaning-and-unclogging.webp",
     brands:
       "Equipment Brands: RIDGID SeeSnake, Spartan Tool, General Pipe Cleaners",
     altText:
@@ -67,7 +67,7 @@ export const plumbingServicesData = [
     subtitle: "Installation, Repair & Maintenance",
     description:
       "Comprehensive water heater solutions for both tank and tankless systems. Expert technicians ensure energy efficiency and system longevity.",
-    image: "/main-blue-hose.webp",
+    image: "/water-heater-services.webp",
     brands: "Leading Brands: Rheem, AO Smith, Bradford White, Navien, Rinnai",
     altText:
       "Plumber servicing or installing a residential or commercial water heater",
@@ -77,7 +77,7 @@ export const plumbingServicesData = [
     subtitle: "Modern Materials and Professional Installation",
     description:
       "New piping installations and full system repiping using durable materials like PEX and copper. Leak-free performance with professional craftsmanship.",
-    image: "/industrial-pump.webp",
+    image: "/pipe-installation-and-repiping.webp",
     brands:
       "Common Materials: PEX, Copper, CPVC, PVC — Installed with Precision",
     altText:
@@ -88,7 +88,7 @@ export const plumbingServicesData = [
     subtitle: "Upgrades, Installations & Fixture Replacements",
     description:
       "Expert installations for sinks, faucets, showers, and appliances. Improve efficiency, aesthetics, and water performance with our professional services.",
-    image: "/silver-plumbery.webp",
+    image: "/bathroom-and-kitchen-plumbing.webp",
     brands: "Quality Fixtures: Moen, Delta, Kohler, Grohe, American Standard",
     altText: "Licensed plumber installing modern bathroom and kitchen fixtures",
   },
@@ -97,7 +97,7 @@ export const plumbingServicesData = [
     subtitle: "Inspection, Repair & Replacement",
     description:
       "From video diagnostics to trenchless repairs, we offer full-service sewer line solutions. Minimal disruption, maximum reliability.",
-    image: "/industrial-plumbing2.webp",
+    image: "/sewer-line-services.webp",
     brands:
       "Diagnostic Tools: RIDGID Cameras, Trenchless Tech, High-Pressure Jetters",
     altText: "Technician performing sewer line inspection or trenchless repair",

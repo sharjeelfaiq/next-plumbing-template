@@ -64,7 +64,7 @@ export const galleryData: GalleryData = {
   ],
   items: [
     {
-      src: "/blue-pump.webp",
+      src: "/water-pump.webp",
       alt: "Reliable water pump used in plumbing systems",
       category: "products",
       title: "Water Pumps",
@@ -73,7 +73,7 @@ export const galleryData: GalleryData = {
       tags: ["water-pump", "plumbing-product"],
     },
     {
-      src: "/green-pump.webp",
+      src: "/pressure-control-units.webp",
       alt: "Pressure control system used in modern plumbing setups",
       category: "products",
       title: "Pressure Control Units",
@@ -81,7 +81,7 @@ export const galleryData: GalleryData = {
       tags: ["pressure-system", "flow-control"],
     },
     {
-      src: "/main-blue-hose.webp",
+      src: "submersible-units.webp",
       alt: "Submersible plumbing pump ready for deep water applications",
       category: "products",
       title: "Submersible Units",
@@ -89,7 +89,7 @@ export const galleryData: GalleryData = {
       tags: ["submersible", "deep-well"],
     },
     {
-      src: "/silver-plumbery.webp",
+      src: "/pressure-tanks.webp",
       alt: "Pressurized tank system used in home plumbing",
       category: "products",
       title: "Pressure Tanks",
@@ -97,7 +97,7 @@ export const galleryData: GalleryData = {
       tags: ["tank", "home-system"],
     },
     {
-      src: "/industrial-pump.webp",
+      src: "/commercial-installations.webp",
       alt: "Commercial plumbing installation at industrial site",
       category: "installations",
       title: "Commercial Installations",
@@ -106,7 +106,7 @@ export const galleryData: GalleryData = {
       tags: ["commercial", "business"],
     },
     {
-      src: "/wall-with-tubes.webp",
+      src: "/pipe-network-design.webp",
       alt: "Pipe network designed for efficient water flow",
       category: "installations",
       title: "Pipe Network Design",
@@ -114,7 +114,7 @@ export const galleryData: GalleryData = {
       tags: ["pipes", "design", "layout"],
     },
     {
-      src: "/industrial-plumbing2.webp",
+      src: "/multi-pump-system.webp",
       alt: "Multiple pump setup for continuous water supply",
       category: "installations",
       title: "Multi-Pump Systems",
@@ -122,7 +122,7 @@ export const galleryData: GalleryData = {
       tags: ["multi-pump", "backup-system"],
     },
     {
-      src: "/plumber-in-kitchen-sink.webp",
+      src: "/kitchen-plumbing.webp",
       alt: "New kitchen sink plumbing being installed",
       category: "installations",
       title: "Kitchen Plumbing",
@@ -130,7 +130,7 @@ export const galleryData: GalleryData = {
       tags: ["kitchen", "residential"],
     },
     {
-      src: "/plumber-fixing-pump.webp",
+      src: "/routine-maintenance.webp",
       alt: "Routine plumbing maintenance on pump system",
       category: "maintenance",
       title: "Routine Maintenance",
@@ -139,7 +139,7 @@ export const galleryData: GalleryData = {
       tags: ["maintenance", "routine-check"],
     },
     {
-      src: "/technician-worker-cutting-metal-with-many-sharp-sparks-using-equipments-cat-iron_158595-8141.webp",
+      src: "/metal-work-repairs.webp",
       alt: "Metal cutting for plumbing system repair",
       category: "maintenance",
       title: "Metal Work Repairs",
@@ -147,7 +147,7 @@ export const galleryData: GalleryData = {
       tags: ["repair", "metalwork"],
     },
     {
-      src: "/close-up-hand-repairman-professional-builder-working-indoors-repairing_155003-7272.webp",
+      src: "/leak-detection.webp",
       alt: "Technician using diagnostic tools during plumbing check",
       category: "maintenance",
       title: "Leak Detection",
@@ -155,7 +155,7 @@ export const galleryData: GalleryData = {
       tags: ["leak-detection", "diagnostics"],
     },
     {
-      src: "/plumber-in-bathroom.webp",
+      src: "/emergency-plumbing.webp",
       alt: "Emergency plumbing repair in a residential bathroom",
       category: "maintenance",
       title: "Emergency Plumbing",

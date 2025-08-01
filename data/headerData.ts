@@ -17,7 +17,7 @@ export interface HeaderData {
 
 export const headerData: HeaderData = {
   logo: {
-    src: "/logo-placeholder-black.png",
+    src: "/logo-placeholder-black.webp",
     alt: "Professional Plumbing Co. Logo",
   },
   navLinks: [
