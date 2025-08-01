@@ -25,7 +25,6 @@ export const headerData: HeaderData = {
     { href: "#about", label: "About Us" },
     { href: "#services", label: "Services" },
     { href: "#gallery", label: "Gallery" },
-    { href: "#testimonials", label: "Testimonials" },
   ],
   contactLink: {
     href: "#contact",

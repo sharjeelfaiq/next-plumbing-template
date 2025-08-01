@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { smoothScroll } from "@/app/utils/smoothScroll";
+import { smoothScroll } from "@/lib/smooth-scroll";
 import { headerData } from "@/data";
 
 export const Header = () => {
