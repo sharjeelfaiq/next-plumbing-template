@@ -1,0 +1,339 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42; /* slate-900 - deep professional text */
+  --background-rgb: 241, 245, 249; /* slate-100 - cool light background */
+  --primary: 30, 58, 138; /* blue-800 - darker trustworthy plumbing blue */
+
+  --background: 210 40% 97%; /* cooler, slightly darker white */
+  --foreground: 215 25% 12%; /* deeper, more industrial text */
+
+  --card: 210 40% 98%; /* slightly cool card background */
+  --card-foreground: 215 25% 12%;
+
+  --popover: 210 40% 98%;
+  --popover-foreground: 215 25% 12%;
+
+  --primary: 221 83% 33%; /* blue-800 - darker, more industrial blue */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 25% 95%; /* cooler, more muted secondary */
+  --secondary-foreground: 215 25% 12%;
+
+  --muted: 215 25% 93%; /* darker muted background */
+  --muted-foreground: 215 20% 55%; /* darker muted text */
+
+  --accent: 215 25% 90%; /* darker, more industrial accent */
+  --accent-foreground: 215 25% 12%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 215 25% 85%; /* darker, more defined borders */
+  --input: 215 25% 85%;
+  --ring: 221 83% 33%; /* matches darker primary */
+
+  --chart-1: 221 83% 33%;
+  --chart-2: 197 71% 28%; /* darker teal */
+  --chart-3: 43 96% 56%;
+  --chart-4: 27 96% 61%;
+  --chart-5: 142 76% 36%;
+
+  --radius: 0.5rem;
+
+  --sidebar-background: 215 25% 96%;
+  --sidebar-foreground: 215 25% 12%;
+  --sidebar-primary: 221 83% 33%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 215 25% 90%;
+  --sidebar-accent-foreground: 215 25% 12%;
+  --sidebar-border: 215 25% 85%;
+  --sidebar-ring: 221 83% 33%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; /* More professional font stack */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  .dark {
+    --background: 215 28% 4%; /* deeper, more industrial dark navy */
+    --foreground: 210 40% 95%;
+
+    --card: 215 28% 5%; /* slightly lighter than background */
+    --card-foreground: 210 40% 95%;
+
+    --popover: 215 28% 5%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 199 89% 55%; /* industrial sky blue for dark mode */
+    --primary-foreground: 215 28% 4%;
+
+    --secondary: 215 28% 10%; /* darker secondary for more contrast */
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 215 28% 8%; /* darker muted areas */
+    --muted-foreground: 215 20% 60%; /* better contrast muted text */
+
+    --accent: 215 28% 12%; /* darker accent areas */
+    --accent-foreground: 210 40% 95%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 95%;
+
+    --border: 215 28% 12%; /* more defined dark borders */
+    --input: 215 28% 12%;
+    --ring: 199 89% 55%; /* matches primary */
+
+    --chart-1: 199 89% 55%;
+    --chart-2: 197 71% 50%; /* adjusted teal for dark mode */
+    --chart-3: 43 96% 66%;
+    --chart-4: 27 96% 71%;
+    --chart-5: 142 76% 56%;
+
+    --sidebar-background: 215 28% 3%; /* even deeper sidebar */
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 199 89% 55%;
+    --sidebar-primary-foreground: 215 28% 4%;
+    --sidebar-accent: 215 28% 12%;
+    --sidebar-accent-foreground: 210 40% 95%;
+    --sidebar-border: 215 28% 8%;
+    --sidebar-ring: 199 89% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-800 hover:bg-blue-900 text-white font-medium py-2 px-4 rounded transition-colors duration-300;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-6;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8;
+  }
+
+  .section-dark {
+    @apply bg-slate-900;
+  }
+
+  .section-gray {
+    @apply bg-slate-800;
+  }
+}
+
+/* Logo and Image Styles */
+.cs-logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cs-logo-img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+.cs-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #1e3a8a; /* Changed to darker industrial blue */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cs-logo-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.cs-logo-group img {
+  width: auto;
+  height: 60px;
+  padding: 8px;
+  border: 2px solid #1e3a8a; /* Darker industrial blue border */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.cs-logo-group img:hover {
+  transform: scale(1.1);
+  border-color: #0ea5e9; /* Industrial sky blue on hover */
+}
+
+/* Gallery styles */
+.gallery-card {
+  position: relative;
+  background: var(--card-background, #ffffff);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(30, 58, 138, 0.2); /* Darker blue shadow */
+}
+
+.gallery-card-image {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.gallery-card-content {
+  padding: 1.5rem;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 1) 0%,
+    rgba(15, 23, 42, 0.9) 100%
+  );
+}
+
+.gallery-toggle-button {
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted, #64748b);
+  transition: color 0.3s ease;
+}
+
+.gallery-toggle-button:hover {
+  color: var(--blue-800, #1e3a8a);
+}
+
+.gallery-toggle-button.active {
+  color: var(--blue-800, #1e3a8a);
+}
+
+.gallery-toggle-button.active::before {
+  content: "";
+  position: absolute;
+  left: -0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--blue-800, #1e3a8a);
+  border-radius: 50%;
+}
+
+/* Logo Slider Styles */
+.cs-logo-slider {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background: #e2e8f0; /* Darker slate background */
+  padding: 20px 0;
+}
+
+.cs-logo-track {
+  display: flex;
+  animation: slide 30s linear infinite;
+  width: fit-content;
+}
+
+.cs-logo-track:hover {
+  animation-play-state: paused;
+}
+
+.cs-logo-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 80px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cs-logo-item:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  background: #0f172a; /* Professional dark slate */
+}
+
+.slide-track {
+  display: flex;
+  width: calc(120px * 26);
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-120px * 13));
+  }
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
